@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 // Middleware to parse JSON body
-app.use(express.json());
+app.use(express.text());
 
 // Echo endpoint
 app.post('/echo', (req, res) => {
