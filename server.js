@@ -6,10 +6,11 @@ app.use(express.json());
 
 // Echo endpoint
 app.post('/echo', (req, res) => {
-    const message = req.body.message;
+    // const message = req.body.message;
+    res.send(req.body);
 
     // Send back the same string
-    res.send(message);
+    // res.send(message);
 });
 
 // Port (Render requires process.env.PORT)
